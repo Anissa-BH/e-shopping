@@ -1,0 +1,23 @@
+<div class="col-md-4 single__pro col-lg-3 cat--1 col-sm-12">
+<div class="product foo product-width">
+    <div class="product__inner">
+      <div class="pro__thumb">
+        <a href="#">
+          <img [src]='product.image' alt="product images">
+        </a>
+      </div>
+      <div class="product__hover__info">
+        <ul class="product__action">
+          <li (click)="addToCart()"><a title="Add TO Cart"><span class="ti-shopping-cart" ></span></a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="product__details">
+      <h2>{{ product.description | truncate:30:'...' }}</h2>
+      <ul class="product__price">
+        <li>{{ product.price | currency:'USD' }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/css/bootstrap.min.css";
+@import "./assets/css/plugins.css";
+@import "./assets/css/shortcode/shortcodes.css";
+@import "./assets/style.css";
+@import "./assets/css/responsive.css";
+@import "./assets/css/custom.css";
+
+
+.product-width{
+  width:255px;
+}
+
+.cart-label {
+  z-index: 999;
+  position: relative;
+  bottom: 8px;
+  right: 7px;
+  background: #ff4136;
+  padding: 4px;
+  border-radius: 80%;
+  color: white !important;
+  font-size: 15px !important;
+}

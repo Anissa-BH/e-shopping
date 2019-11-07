@@ -1,0 +1,13 @@
+<section class="htc__product__area shop__page bg__white">
+  <div class="container">
+    <div class="htc__product__container">
+      <app-product-list-menu></app-product-list-menu>
+      <div class="row product__list">
+        <ng-container *ngFor="let product of products">
+          <app-product [product]='product'></app-product>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>
+

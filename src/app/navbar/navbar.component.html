@@ -1,0 +1,32 @@
+<header id="header" class="htc-header header--3 bg__white">
+  <div id="sticky-header-with-topbar" class="mainmenu__area sticky__header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-lg-2 col-6">
+          <div class="logo">
+            <a routerLink="/home">
+              <img src="../../assets/images/logo/uniqlo.png" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-8 d-none d-md-block">
+        </div>
+        <div class="col-md-2 col-lg-2 col-6">
+          <ul class="menu-extra">
+            <li><a routerLink="/home"><span class="ti-search"></span></a></li>
+            <li class="cart__menu">
+              <a routerLink="/cart">
+                <span class="ti-shopping-cart">
+                  <span class="cart-label" *ngIf="cartCounter > 0">
+                    {{ cartCounter }}
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-menu-area"></div>
+    </div>
+  </div>
+</header>

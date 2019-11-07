@@ -1,0 +1,49 @@
+<div class="cart-main-area ptb--120 bg__white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12">
+        <form action="#">
+          <div class="table-content table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th class="product-thumbnail">Image</th>
+                  <th class="product-name">Product</th>
+                  <th class="product-price">Price</th>
+                  <th class="product-quantity">Quantity</th>
+                  <th class="product-remove">Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let product of cart">
+                  <td class="product-thumbnail"><a href="#"><img [src]='product.image' alt="product img" /></a></td>
+                  <td class="product-name"><a href="#">{{ product.name }}</a></td>
+                  <td class="product-price"><span class="amount">{{ product.price | currency:'USD' }}</span></td>
+                  <td class="product-price"><span class="amount">{{ product.quantity }}</span></td>
+                  <td class="product-remove"><a href="" (click)="!!removeItem(product)">X</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <div class="cart_totals">
+                <h2>Cart Totals</h2>
+                <table>
+                  <tbody>
+                    <tr class="order-total">
+                      <th>Total</th>
+                      <td>
+                        <strong><span class="amount">{{ totalPrice | currency:'USD'}}</span></strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
