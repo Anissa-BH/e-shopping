@@ -32,4 +32,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 https://user-images.githubusercontent.com/34075900/68431880-89bf2280-01b3-11ea-9ffa-7408e47fb7be.png
 
 #### Cart content
+https://user-images.githubusercontent.com/34075900/68432404-aad44300-01b4-11ea-9d11-7a94c2fc05be.png
+
 
